@@ -1,0 +1,10 @@
+@import '../../../scss/index.scss';
+
+.menu-sider {
+    position:fixed;
+    left: 0;
+    top: 64px;
+    overflow:auto;
+    height:100vh;
+
+}

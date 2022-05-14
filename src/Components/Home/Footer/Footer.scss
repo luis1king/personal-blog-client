@@ -1,0 +1,80 @@
+@import "../../../scss/index.scss";
+
+
+
+// FOOTER
+
+.footer {
+    background-color: $background-dark-web;
+    border-top: 3px solid $primary-color;
+  
+    &__copyright {
+      margin-top: 30px;
+  
+      .ant-col {
+        color: white;
+  
+        &:last-of-type {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+
+
+// NVIGATION FOOTER
+.navigation-footer {
+    margin-left: 70px;
+    margin-top: 10px;
+    h3 {
+      color: $font-light;
+      font-weight: bold;
+    }
+  
+    ul {
+      padding: 0;
+  
+      li {
+        list-style: none;
+        padding: 5px 0;
+  
+        a {
+          color: $primary-color-dark;
+          &:hover {
+            color: $primary-color;
+          }
+  
+          i {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  //PERSONAL INFO 
+  .my-info {
+    img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    h4 {
+      margin-bottom: 20px;
+      color: $primary-color-dark;
+      font-size: 20px;
+    }
+  
+  }
+  
+  .social-links {
+    justify-content: space-between;
+    width: 200px;
+
+    svg { 
+      width: 40px;
+      margin-left: 10px;
+    }
+ 
+  }
+
