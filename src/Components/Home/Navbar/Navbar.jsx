@@ -46,12 +46,6 @@ export const Navbar = () => {
         );
         
       })}
-      <Menu.Item  key={12}  className="navbar__item">
-              <a target="_blank" rel="noopener noreferrer">
-                HOLA
-              </a>
-            </Menu.Item>
-
     </Menu>
   );
 }

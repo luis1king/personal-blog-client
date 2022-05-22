@@ -1,0 +1,24 @@
+
+.aside {
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lospost {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        margin-left:40px;
+    }
+}
+
+.blogss {
+    padding-left: 30px;
+}

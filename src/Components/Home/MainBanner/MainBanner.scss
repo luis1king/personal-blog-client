@@ -1,4 +1,5 @@
 @import "../../../scss/index.scss";
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Playfair+Display:ital@1&display=swap');
 
 .main-banner {
   position: relative;
@@ -27,10 +28,12 @@
     height: 100%;
 
     h2 {
-      color: #fff;
+      color: $primary_color_light;
       font-size: 60px;
       font-weight: bold;
       line-height: 1;
+      font-family: 'Koulen', cursive;
+      font-family: 'Playfair Display', serif;
     }
 
     h3 {

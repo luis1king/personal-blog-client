@@ -15,7 +15,7 @@ export const AdminLayouts = ({setLogged}) => {
   return (
     <Layout>
      <MenuSider menuCollapsed={menuCollapsed}/>
-        <Layout className="layout-admin">
+        <Layout className="layout-admin" style={{marginLeft: menuCollapsed ? "80px": "200px"}}>
             <Header className="layout-admin-header">
                <MenuTop menuCollapsed={menuCollapsed}
                setMenuCollapsed={setMenuCollapsed}

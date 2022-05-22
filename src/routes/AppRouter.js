@@ -13,6 +13,8 @@ import { SobreMi } from '../pages/About/SobreMi'
 import { User } from '../pages/Users/User'
 import { PrivateRoute } from './privateRoute'
 import { PublicRoute } from './publicRoute'
+import { Blog } from '../pages/Blog'
+import { AdminBlog } from '../pages/Admin/Blog/AdminBlog'
 
 
 export const AppRouter = () => {
@@ -25,7 +27,6 @@ export const AppRouter = () => {
    refreshToken({setLogged});
   }, [token])
 
-  console.log(logged)
   return (
     <Routes>
         <Route path="/admin" element={
@@ -37,6 +38,7 @@ export const AppRouter = () => {
         <Route index element={<Admin/>}/>
         <Route path="users" element={<User/>}/>
         <Route path="menu-web" element={<MenuWeb/>}/>
+        <Route path="blog" element={<AdminBlog/>}/>
         </Route>
         
         <Route path="/admin/login" element={
@@ -47,6 +49,8 @@ export const AppRouter = () => {
           
         <Route path="/" element={<BasicLayouts/>}>
             <Route index element={<Home/>}/>
+            <Route path="blog" element={<Blog/>}/>
+            <Route path="blog/:url" element={<Blog/>}/>
             <Route path="contact" element={<Contact/>}/>
             <Route path="about" element={<SobreMi/>}/>
         </Route>

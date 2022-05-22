@@ -14,8 +14,8 @@
 
     &-content {
         // Para que el contenido ocupe el 100% sin llegar a realizar el scroll
-        padding: 90px 25px 25px 25px;
         max-height: calc(100vh - 65px);
+        padding: 90px 25px 25px 25px;
     }
 
     &-footer {

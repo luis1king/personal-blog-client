@@ -2,7 +2,7 @@ import React from 'react'
 import { Layout, Menu } from 'antd'
 import MenuItem from 'antd/lib/menu/MenuItem';
 import { Link, useLocation } from 'react-router-dom';
-import { HomeOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
+import { FormOutlined, HomeOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
 import './MenuSider.scss'
 
 export const MenuSider = ({menuCollapsed}) => {
@@ -31,6 +31,12 @@ export const MenuSider = ({menuCollapsed}) => {
             <Link to={`/admin/users`}>
             <UserOutlined />
             <span className="nav-text">Users</span>
+            </Link>
+          </MenuItem>
+          <MenuItem key="/admin/blog">
+            <Link to={`/admin/blog`}>
+            <FormOutlined />
+            <span className="nav-text">Blog</span>
             </Link>
           </MenuItem>
         </Menu>

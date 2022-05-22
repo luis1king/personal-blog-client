@@ -1,0 +1,46 @@
+@import "../../../../scss/index.scss";
+
+.thepost {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.post-info {
+  margin-top: 50px;
+  color: #fff;
+  &__title {
+    text-align: center;
+    margin-bottom: 0;
+    color: $font-light;
+    font-weight: bold;
+    font-size: 40px;
+    color: $font_light;
+  }
+
+  &__creation-date {
+    text-align: center;
+    color: $font-light;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  &__description {
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 16px;
+    margin-bottom: 100px;
+
+    h1,h2,h3,h4,h5,h6 {
+      color:white;
+    }
+
+    @media (max-width: 768px) {
+
+      figure {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

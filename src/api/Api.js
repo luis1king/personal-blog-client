@@ -1,8 +1,8 @@
 import { message } from "antd";
 
 
-export const baseUrl = 'http://localhost:4000/api';
-
+export const baseUrl = process.env.REACT_APP_API_URL;
+console.log(baseUrl)
 export const register = (data) => {
     const url = `${baseUrl}/auth/register`;
     const params = {
@@ -38,10 +38,11 @@ export const SingIn = (data) => {
     return fetch(url, params)
     .then(async (response) => {
       const result =  await response.json()
+      console.log(result);
          if (result.ok === true) {
             localStorage.setItem('token', result.token);
         } else {
-            message.error(result.msg);
+           console.log(result.msg);
         }
     })  
 }
@@ -87,11 +88,11 @@ export const refreshToken = ({setLogged}) => {
          if (result.ok === true) {
             localStorage.setItem('token', result.token);
             setLogged(true)
-        } else {
-            message.error(result.msg);
-            setLogged(false)
+        } else if (result.ok === false) {
+            setLogged(false);
         }
-    })  
+        }
+    )  
 }
 
 export const logout = ({setLogged}) => {

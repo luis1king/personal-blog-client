@@ -1,0 +1,32 @@
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        h2 {
+            color: #fff;
+        }
+        
+        .row {
+            justify-content:center;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            label {
+                margin-bottom: 5px;
+            }
+            
+            input {
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+}

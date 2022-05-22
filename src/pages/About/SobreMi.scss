@@ -1,7 +1,101 @@
+@import "../../scss/index.scss";
+
+.banner {
+    height: 350px;
+    background: rgb(6,46,80);
+    background: linear-gradient(0deg, rgba(6,46,80,1) 0%, rgba(138,206,214,1) 65%, rgba(235,227,222,1) 88%, rgba(235,226,221,1) 100%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            color: $font_light;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+        }
+        h3 {
+            color: $font_light;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            opacity: 0.7;
+            text-align: center;
+        }
+    }
+}
+ 
+.about{
+    display: flex;
+    justify-content: center;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 60px;
+        h1 {
+            color: $font_light;
+            text-align: center;
+        }
+        
+        p {
+            color: $font_light;
+            font-size: 17px;
+        }
+    }
+
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        h1{
+            color: $font_light;
+        }
+        p {
+            color: $font_light;
+        }
+        .item-title {
+            font-weight: bold;
+        }
+        ant-timeline {
+            margin-left: 10px;
+        }
+    }
+
+    .skills {
+        
+        h1 {
+            color: $font_light;
+            text-align: center;
+        }
+        
+        .tabla {
+            padding-left: 30px;
+            padding-right: 30px;
+            @media (max-width: 768px) {
+                    padding-left:0;
+            }
+            .table {
+            
+                th {
+                   
+                    padding-left: 50px;
+                }
+            }
+
+    
+            
+        }
+    }
+}
 
 
-
-
-
-background: rgb(0,152,211);
-background: radial-gradient(circle, rgba(0,152,211,1) 0%, rgba(2,128,179,1) 100%);

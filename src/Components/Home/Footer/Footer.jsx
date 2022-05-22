@@ -21,8 +21,8 @@ export const Footer = () => {
              <div className="my-info">
                 <img src={logo} alt="logo" />
                 <h4>
-                    Entra en el mundo del desarrollo web, disfruta creando proyectos de todo
-                    tipo, deja que tú imaginación fluya y crea verdaderas maravillas!!
+                    Trabaja día a día con disciplina y consistencia, hasta lograr tus metas.
+                    Repítelo!
                 </h4>
                 </div>
             </Col>
@@ -72,7 +72,7 @@ export const Footer = () => {
                 <Col >
                 <div className="social-links">
       <a
-        href="https://www.youtube.com/c/AgustinNavarroGaldon?sub_confirmation=1"
+        href=""
         className="icon"
         target="_blank"
         rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export const Footer = () => {
         <WechatIcon />
       </a>
       <a
-        href="https://twitter.com/xagustin93"
+        href="https://github.com/luis1king"
         className="icon"
         target="_blank"
         rel="noopener noreferrer"
@@ -88,7 +88,7 @@ export const Footer = () => {
         <GithubIcon />
       </a>
       <a
-        href="https://www.facebook.com/AgustinNavarroGaldon"
+        href=""
         className="icon"
         target="_blank"
         rel="noopener noreferrer"
@@ -96,7 +96,7 @@ export const Footer = () => {
         <WhatsappIcon />
       </a>
       <a
-        href="https://es.linkedin.com/in/agustin93"
+        href="https://es.linkedin.com/in/luishuang"
         className="icon"
         target="_blank"
         rel="noopener noreferrer"
@@ -112,7 +112,7 @@ export const Footer = () => {
             
           </Row>
           <Row className="footer__copyright">
-            <Col md={12}>© 2022 ALL RIGHTS RESERVED​</Col>
+            <Col md={12}>© 2022 Todos los derechos reservados​</Col>
             <Col md={12}>Made with &#128151; by Luis Huang</Col>
           </Row>
         </Col>

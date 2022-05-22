@@ -13,7 +13,7 @@ export const BasicLayouts = () => {
    <>
      <Row>
         <Col lg={1} />
-        <Col lg={16}>
+        <Col span={24}>
           <Navbar />
         </Col>
         <Col lg={4} />
